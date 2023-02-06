@@ -1,0 +1,195 @@
+Name: Alarms
+Type: FolderType
+Children:
+- Name: ExclusiveDeviationAlarm1
+  Type: ExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -1.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+- Name: ExclusiveDeviationAlarm2
+  Type: ExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+  - Name: AutoAcknowledge
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+- Name: NonExclusiveDeviationAlarm1
+  Type: NonExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: HighHighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2.0
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: LowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -1.0
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+- Name: NonExclusiveDeviationAlarm2
+  Type: NonExclusiveDeviationAlarmController
+  Children:
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 10.0
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=12;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=12;i=83
+    Direction: Forward
+  - Name: LowLowLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: -2.0
+  - Name: AutoAcknowledge
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
